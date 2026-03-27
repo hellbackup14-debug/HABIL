@@ -27,7 +27,7 @@ export default function VideoSurprise({ src = "/surprise.mp4", compact }: Props)
       const v = videoRef.current;
       if (!v) return;
       // Only use standard requestFullscreen for modern browsers
-      if (v.requestFullscreen) {
+      if (typeof v.requestFullscreen === 'function') {
         v.requestFullscreen();
       }
       try {
