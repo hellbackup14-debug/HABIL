@@ -57,9 +57,9 @@ export default function VideoSurprise({ src = "/surprise.mp4", compact }: Props)
         padding: "2.8rem 2.2rem 2.2rem 2.2rem"
       }}
     >
-      <p className="mb-2 text-xs uppercase tracking-[0.28em] text-gold-300/90 font-semibold drop-shadow-sm animate-fadein-up" style={{animationDelay:'0.1s', animationFillMode:'both'}}>A Little Surprise</p>
-      <h3 className="font-serif text-5xl sm:text-6xl text-white drop-shadow-md mb-3 animate-fadein-up" style={{animationDelay:'0.25s', animationFillMode:'both'}}>Almost there…</h3>
-      <p className="mt-3 text-lg sm:text-xl text-ink-100/90 font-light italic animate-fadein-up" style={{animationDelay:'0.5s', animationFillMode:'both'}}>One last step. Press play when you are ready.</p>
+      <p className="mb-2 text-xs uppercase tracking-[0.28em] text-gold-300/90 font-semibold drop-shadow-sm animate-fadein-up" style={{animationDelay:'0.1s', animationFillMode:'both'}}>Sedikit Kejutan</p>
+      <h3 className="font-serif text-5xl sm:text-6xl text-white drop-shadow-md mb-3 animate-fadein-up" style={{animationDelay:'0.25s', animationFillMode:'both'}}>Hampir sampai…</h3>
+      <p className="mt-3 text-lg sm:text-xl text-ink-100/90 font-light italic animate-fadein-up" style={{animationDelay:'0.5s', animationFillMode:'both'}}>Satu langkah lagi. Tekan play saat kamu siap.</p>
       <button
         className={cn(
           "mt-10 rounded-full bg-gradient-to-r from-gold-400 via-gold-300 to-gold-400 px-12 py-3 font-serif text-lg font-semibold text-ink-900 shadow-lg shadow-gold-300/10",

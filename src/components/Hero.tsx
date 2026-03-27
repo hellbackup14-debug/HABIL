@@ -30,11 +30,10 @@ export default function Hero({ onStart }: Props) {
       <div className="container mx-auto px-6 py-28 lg:py-36">
         <div className="mx-auto max-w-3xl text-center">
           <h1 className="font-serif text-5xl tracking-tight sm:text-6xl lg:text-7xl">
-            Happy Birthday, <span className="text-gold-300">Muthia</span>
+            Selamat Ulang Tahun, <span className="text-gold-300">Muthia</span>
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-ink-100">
-            On this gentle day, I celebrate you—your laughter, your light, and the way
-            you turn simple moments into something beautiful. Thank you for being my favorite chapter.
+            Di hari yang lembut ini, aku merayakanmu—tawamu, cahayamu, dan caramu mengubah momen sederhana menjadi sesuatu yang indah. Terima kasih telah menjadi bab favoritku.
           </p>
           <div className="mt-10 flex items-center justify-center gap-3">
             <button
@@ -44,9 +43,10 @@ export default function Hero({ onStart }: Props) {
                 "transition-transform hover:-translate-y-0.5 active:translate-y-0",
               )}
             >
-              Start
+              Mulai
             </button>
             <span className="text-sm text-ink-100">Scroll for a little story</span>
+                        Gulir untuk cerita kecil
           </div>
           <div className="mt-12 flex justify-center">
             <div className="h-16 w-px rounded-full bg-gradient-to-b from-gold-300/30 to-gold-300/0" />

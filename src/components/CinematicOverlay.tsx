@@ -37,14 +37,14 @@ export default function CinematicOverlay({ onEnter }: Props) {
 
       <div className="relative flex h-full items-center justify-center px-6">
         <div className="max-w-2xl text-center">
-          <p className="mb-3 text-xs uppercase tracking-[0.32em] text-ink-100/85">A Cinematic Birthday Story</p>
+          <p className="mb-3 text-xs uppercase tracking-[0.32em] text-ink-100/85">Sebuah Cerita Ulang Tahun Sinematik</p>
           <h1 className="font-serif text-4xl leading-tight text-white sm:text-5xl md:text-6xl">
-            For Muthia,
+            Untuk Muthia,
             <br />
-            with all my love
+            dengan seluruh cintaku
           </h1>
           <p className="mx-auto mt-5 max-w-xl text-sm leading-relaxed text-ink-100/90 sm:text-base">
-            A soft little film made of memories, warmth, and one special surprise at the end.
+            Sebuah film kecil yang lembut dari kenangan, kehangatan, dan satu kejutan spesial di akhir.
           </p>
           <div className="mt-9 flex items-center justify-center gap-3">
             <button

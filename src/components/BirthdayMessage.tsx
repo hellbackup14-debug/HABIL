@@ -5,21 +5,21 @@ export default function BirthdayMessage() {
     <section className="relative">
       <div className="container mx-auto px-6 py-24 md:py-36">
         <div className="mx-auto max-w-3xl text-center md:text-left">
-          <h3 className="font-serif text-3xl">A Letter for You</h3>
-          <div className={cn("mx-auto mt-6 max-w-2xl text-ink-100 leading-relaxed", "md:text-lg")}>
+          <h3 className="font-serif text-3xl">Sebuah Surat Untukmu</h3>
+          <div className={cn("mx-auto mt-6 max-w-2xl text-ink-100 leading-relaxed", "md:text-lg")}> 
             <p>
-              Dear Muthia, on your special day, I just want to wrap you in gentle words.
-              You have a way of turning quiet mornings into warm memories and small walks into soft adventures.
+              Muthia tersayang, di hari spesialmu, aku hanya ingin membalutmu dengan kata-kata lembut.
+              Kamu selalu bisa mengubah pagi yang sunyi menjadi kenangan hangat dan langkah kecil menjadi petualangan indah.
             </p>
             <p className="mt-4">
-              I love the kindness in your heart, the courage in your smile, and the way you care—so gracefully.
-              With you, the world feels lighter; the air feels softer; and my days find their rhythm.
+              Aku mencintai kebaikan di hatimu, keberanian di senyummu, dan caramu peduli—begitu anggun.
+              Bersamamu, dunia terasa lebih ringan; udara terasa lebih lembut; dan hariku menemukan iramanya.
             </p>
             <p className="mt-4">
-              May this year bring you everything tender and true. I’m lucky to love you,
-              and I’m grateful for every version of us—past, present, and the many beautiful tomorrows.
+              Semoga tahun ini membawa segala yang lembut dan tulus untukmu. Aku beruntung mencintaimu,
+              dan aku bersyukur untuk setiap versi kita—masa lalu, sekarang, dan banyak hari indah di depan.
             </p>
-            <p className="mt-6 italic text-ink-100/80">With love, always.</p>
+            <p className="mt-6 italic text-ink-100/80">Dengan cinta, selalu.</p>
           </div>
         </div>
       </div>

@@ -12,7 +12,7 @@ export default function GiftButtonWithFullscreen({ onOpen }: { onOpen: () => voi
         <span className="block text-[90px] sm:text-[120px] text-purple-400 group-hover:scale-110 transition-transform duration-300">
           🎁
         </span>
-        <span className="block mt-2 text-base text-purple-200 group-hover:text-purple-300 transition-colors">Scroll Down</span>
+        <span className="block mt-2 text-base text-purple-200 group-hover:text-purple-300 transition-colors">Scroll Kebawah</span>
       </button>
     </div>
   );

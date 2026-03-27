@@ -46,7 +46,7 @@ export default function WelcomeGate({ onStart }: Props) {
       <div className="relative mx-auto max-w-2xl text-center">
         <p className="mb-5 text-xs uppercase tracking-[0.34em] text-gold-300/85 opacity-0 animate-fadein-up" style={{animationDelay:'0.25s', animationFillMode:'both'}}>Private Birthday Web</p>
         <h1 className="font-serif text-5xl text-white sm:text-6xl">
-          {"HELLO MUTHIA".split("").map((ch, idx) => (
+          {"HAI MUTHIA".split("").map((ch, idx) => (
             <span
               key={`${ch}-${idx}`}
               className={cn("inline-block cinematic-letter", ch === " " ? "w-[0.38em]" : "")}
@@ -57,7 +57,7 @@ export default function WelcomeGate({ onStart }: Props) {
           ))}
         </h1>
         <p className="mx-auto mt-6 max-w-xl text-sm leading-relaxed text-ink-100/90 sm:text-base opacity-0 animate-fadein-up" style={{animationDelay:'0.5s', animationFillMode:'both'}}>
-          I made a gentle story for you. Small words, warm feelings, and one surprise at the end.
+          Aku membuat sesuatu untuk mu hari ini.
         </p>
         <button
           onClick={start}
@@ -67,7 +67,7 @@ export default function WelcomeGate({ onStart }: Props) {
           )}
           style={{animationDelay:'1.1s', animationFillMode:'both'}}
         >
-          Click To Start
+          Klik Ini Yaa
         </button>
       </div>
     </div>

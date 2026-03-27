@@ -31,13 +31,16 @@ function GiftFadeIn({ show, onShow }: { show: boolean; onShow: () => void }) {
   return (
     <div className="flex flex-col items-center justify-center min-h-[300px] py-8">
       {visible && !showIframe && (
-        <button
-          className="rounded-full bg-gradient-to-r from-purple-500 via-fuchsia-500 to-pink-500 px-12 py-4 text-xl font-bold text-white shadow-2xl hover:scale-105 hover:from-purple-600 hover:to-pink-600 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-fuchsia-300/40 drop-shadow-lg"
-          style={{ letterSpacing: '0.04em', boxShadow: '0 8px 32px 0 rgba(80,0,120,0.18)' }}
-          onClick={handleClickMe}
-        >
-          <span className="inline-block align-middle mr-2 text-2xl">🎬</span>Click Me
-        </button>
+        <>
+          <button
+            className="rounded-full bg-gradient-to-r from-purple-500 via-fuchsia-500 to-pink-500 px-12 py-4 text-xl font-bold text-white shadow-2xl hover:scale-105 hover:from-purple-600 hover:to-pink-600 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-fuchsia-300/40 drop-shadow-lg"
+            style={{ letterSpacing: '0.04em', boxShadow: '0 8px 32px 0 rgba(80,0,120,0.18)' }}
+            onClick={handleClickMe}
+          >
+            <span className="inline-block align-middle mr-2 text-2xl">🎬</span>Klik ini yaa
+          </button>
+          <span className="inline-block align-middle mr-2 text-2xl"></span>
+        </>
       )}
       {visible && showIframe && (
         <div style={{ position: "relative", paddingBottom: "56.25%", height: 0, width: '100%', maxWidth: 700 }} className="mx-auto mt-6 rounded-2xl overflow-hidden shadow-2xl border border-purple-400/20 bg-black/80">
@@ -90,32 +93,32 @@ export default function Home() {
       {opened && (
         <SlideDeck duration={950} initialIndex={slideIndex}>
           <CarouselPanel
-            title="Hi, Muthia."
-            subtitle="Just a few words from my heart."
-            note="Swipe gently, this story is for you."
+            title="Hai, Muthia."
+            subtitle="Beberapa kata dari hatiku."
+            note="Geser perlahan, cerita ini untukmu."
           />
           <CarouselPanel
-            title="Thank you."
-            subtitle="For your patience, your warmth, your gentle way of loving."
+            title="Terima kasih."
+            subtitle="Untuk kesabaranmu, kehangatanmu, dan caramu mencintai dengan lembut."
           />
           <CarouselPanel
-            title="I wish for you."
-            subtitle="Soft mornings. Brave days. Peaceful nights."
+            title="Harapanku untukmu."
+            subtitle="Pagi yang lembut. Hari yang berani. Malam yang damai."
           />
           {/* Celebration scene before the video surprise */}
           <CarouselPanel
-            title="A Little Gift For You"
-            subtitle="Before your surprise, here's a small present."
-            note="Click the present to continue."
+            title="Sedikit Hadiah Untukmu"
+            subtitle="Sebelum kejutanmu, ini hadiah kecil."
+            note="Klik hadiah untuk melanjutkan."
           >
             <GiftButtonWithFullscreen onOpen={handleGiftOpen} />
           </CarouselPanel>
           {/* Video surprise scene, only show after gift is opened */}
           {showGift && (
             <CarouselPanel
-              title="And now..."
-              subtitle="One little surprise for your special day."
-              note="Click the button to see a little gift."
+              title="Dan sekarang..."
+              subtitle="Satu kejutan kecil untuk hari spesialmu."
+              note="Klik tombol untuk melihat hadiah kecil."
             >
               <GiftFadeIn show={showGift} onShow={() => setShowGift(true)} />
             </CarouselPanel>
