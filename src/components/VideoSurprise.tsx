@@ -26,15 +26,9 @@ export default function VideoSurprise({ src = "/surprise.mp4", compact }: Props)
     setTimeout(async () => {
       const v = videoRef.current;
       if (!v) return;
-      // Try to request fullscreen
-      if (v.requestFullscreen) {
+      // Only use standard requestFullscreen for modern browsers
+      if (typeof v.requestFullscreen === 'function') {
         v.requestFullscreen();
-      } else if (v.webkitRequestFullscreen) {
-        v.webkitRequestFullscreen();
-      } else if (v.mozRequestFullScreen) {
-        v.mozRequestFullScreen();
-      } else if (v.msRequestFullscreen) {
-        v.msRequestFullscreen();
       }
       try {
         await v.play();

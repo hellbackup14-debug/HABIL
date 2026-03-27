@@ -22,16 +22,8 @@ function GiftFadeIn({ show, onShow }: { show: boolean; onShow: () => void }) {
     setShowIframe(true);
     setTimeout(() => {
       const iframe = iframeRef.current;
-      if (iframe) {
-        if (iframe.requestFullscreen) {
-          iframe.requestFullscreen();
-        } else if ((iframe as any).webkitRequestFullscreen) {
-          (iframe as any).webkitRequestFullscreen();
-        } else if ((iframe as any).mozRequestFullScreen) {
-          (iframe as any).mozRequestFullScreen();
-        } else if ((iframe as any).msRequestFullscreen) {
-          (iframe as any).msRequestFullscreen();
-        }
+      if (iframe && typeof iframe.requestFullscreen === 'function') {
+        iframe.requestFullscreen();
       }
       onShow();
     }, 100);
